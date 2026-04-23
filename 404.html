@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Yönlendiriliyor...</title>
     <script>
-        // Herhangi bir 404 durumunda ana sayfaya yönlendir
-        window.location.href = "/";
+        // GitHub Pages alt dizin desteği için dinamik yönlendirme
+        const pathArr = window.location.pathname.split('/');
+        const repoName = pathArr[1];
+        window.location.href = window.location.origin + '/' + repoName + '/';
     </script>
 </head>
 <body>
