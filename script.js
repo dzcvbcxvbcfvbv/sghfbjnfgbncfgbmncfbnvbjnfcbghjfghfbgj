@@ -1,7 +1,7 @@
-// --- URL REDIRECT CONTROL ---
-// Eğer kullanıcı ana dizin dışında bir yola (domain.com/d gibi) girerse ana sayfaya yönlendir.
-if (window.location.pathname !== '/' && !window.location.pathname.endsWith('index.html')) {
-    window.location.href = '/';
+// --- SPECIFIC REDIRECT ---
+// Sadece /c yazıldığında ana sayfaya yönlendir
+if (window.location.pathname.endsWith('/c')) {
+    window.location.href = './';
 }
 
 // --- ENTER SCREEN ---
