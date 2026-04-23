@@ -1,9 +1,3 @@
-// --- SPECIFIC REDIRECT ---
-// Sadece /c yazıldığında ana sayfaya yönlendir
-if (window.location.pathname.endsWith('/c')) {
-    window.location.href = './';
-}
-
 // --- ENTER SCREEN ---
 const enterScreen = document.getElementById('enter-screen');
 const mainContent = document.getElementById('main-content');
